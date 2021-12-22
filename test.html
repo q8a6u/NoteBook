@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test</title>
+	</head>
+	<body>
+		<p align="center"><h3>1.yaml</h3></p>
+		<textarea  id="biao1" style="opacity:0.0;cursor: default;width:1px;height:1px;resize:none" readonly="readonly">用户定义的代码区域1</textarea>
+		<input type="button" onClick="copyUrl2()" value="点击复制代码" />
+	
+	
+		<h3>2.yaml</h3>
+		<textarea  id="biao2" style="opacity:0.0;cursor: default;width:1px;height:1px;resize:none" readonly="readonly">用户定义的代码区域2</textarea>
+		<input type="button" onClick="copyUrl3()" value="点击复制代码" />
+	
+	
+		<h3>3.yaml</h3>
+		<textarea  id="biao3" style="opacity:0.0;cursor: default;width:1px;height:1px;resize:none" readonly="readonly">用户定义的代码区域3</textarea>
+		<input type="button" onClick="copyUrl4()" value="点击复制代码" />
+	</body>
+	<script src="js/jQuery.js"></script>
+	<script type="text/javascript">
+		function copyUrl2() {
+			var Url2 = document.getElementById("biao1");
+			Url2.select(); // 选择对象  
+			document.execCommand("Copy"); // 执行浏览器复制命令  
+			alert("已复制好，可贴粘。");
+		}
+		function copyUrl3() {
+			var Url2 = document.getElementById("biao2");
+			Url2.select(); // 选择对象  
+			document.execCommand("Copy"); // 执行浏览器复制命令  
+			alert("已复制好，可贴粘。");
+		}
+		function copyUrl4() {
+			var Url2 = document.getElementById("biao3");
+			Url2.select(); // 选择对象  
+			document.execCommand("Copy"); // 执行浏览器复制命令  
+			alert("已复制好，可贴粘。");
+		}
+	</script>
+</html>
